@@ -1,0 +1,345 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    top: 30px;
+    border-radius: 20px;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 30px rgb(190, 190, 177);
+    position: relative;
+    transition: 1s;
+}
+
+.desc1 {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    width: 30%;
+    position: relative;
+    transition: .3s;
+}
+
+.desc1:hover {
+    box-shadow: 0 0 20px 2px rgb(44, 44, 44);
+    transform: scale(1.05);
+}
+
+.desc2 {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    width: 30%;
+    position: relative;
+    transition: .3s;
+}
+
+.desc2:hover {
+    box-shadow: 0 0 20px 2px rgb(44, 44, 44);
+    transform: scale(1.05);
+}
+
+.desc3 {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    width: 30%;
+    position: relative;
+    transition: .3s;
+}
+
+.desc3:hover {
+    box-shadow: 0 0 20px 2px rgb(44, 44, 44);
+    transform: scale(1.05);
+}
+
+.karate {
+    width: 190px;
+    padding: 10px;
+    height: 190px;
+    border-radius: 10px;
+}
+
+.yoga {
+    width: 190px;
+    height: 190px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.archer {
+    width: 190px;
+    height: 190px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.checkbox {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+
+.checkbox2 {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+
+.checkbox3 {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+
+.button {
+    padding: 13px 50px;
+    border: 1px solid green;
+    border-radius: 20px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 15px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgb(104, 255, 3);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    /* -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27); */
+    transition: all 1.4s;
+    overflow: hidden;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #0da354;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgb(43, 255, 0);
+    box-shadow: 4px 8px 19px -3px rgb(94, 255, 0);
+    /* -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27); */
+    transition: all .4s
+}
+
+.button:hover {
+    color: #ffffff;
+}
+
+.button:hover::before {
+    width: 100%;
+}
+
+.popup {
+    display: flex;
+    position: absolute;
+    box-shadow: 0 0 30px 5px rgb(145, 143, 143);
+    border-radius: 20px;
+    z-index: 1;
+    width: 400px;
+    height: 200px;
+    backdrop-filter: blur(20px);
+    animation: popup .3s linear forwards;
+    display: none;
+}
+
+@keyframes popup {
+    from {
+        transform: translateY(-10px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.popuptext {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    left: 14%;
+    top: 20px;
+}
+
+.popupbtn {
+    position: absolute;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+    left: 30px;
+    top: 100px;
+    width: 130px;
+    text-decoration: none;
+    box-shadow: 0 0 10px 5px rgba(148, 148, 148, 0.6);
+    border-radius: 20px;
+    transition: all .5s;
+}
+
+.popupbtn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.popupbtn2 {
+    position: absolute;
+    padding-top: 16px;
+    color: black;
+    font-weight: bold;
+    right: 30px;
+    top: 100px;
+    width: 130px;
+    height: 42px;
+    text-decoration: none;
+    box-shadow: 0 0 10px 5px rgba(148, 148, 148, 0.6);
+    border-radius: 20px;
+    transition: all .5s;
+}
+
+.popupbtn2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.redirectmsg {
+    display: none;
+    position: sticky;
+    top: 0%;
+    font-size: 20px;
+    z-index: 5;
+    background-color: white;
+    width: 100%;
+    border-bottom: 2px solid green;
+    box-shadow: -0px 3px 1px green;
+    animation: msg .7s forwards;
+}
+
+@keyframes msg {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.fotter {
+        width: 100%;
+        height: 150px;
+        margin-top: 70px;
+        background-color: rgb(55, 60, 78);
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+        gap: 20px;
+    }
+    .icons{
+        margin-top: 20px;
+        height: 30px;
+    }
+    .icons > span {
+        color: white;
+        font-size: 35px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .navlinks{
+        display: flex;
+        gap: 20px;
+        margin-left: 30px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .rights{
+        color: rgb(78, 66, 110);
+        background-color: rgba(30, 36, 70, 0.555);
+        width: 100%;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    .rights > p{
+        text-align: center;
+        margin-left: 30px;
+        color: rgb(175, 158, 158);
+    }
+.logoarea {
+    display: flex;
+    z-index: 5;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 5px 3px rgba(104, 102, 102, 0.808);
+}
+
+.logo {
+    padding-left: 10px;
+}
+
+.heading {
+    font-size: 30px;
+    color: rgb(55, 60, 78);
+}
+.contact{
+    display: flex;
+    margin-top: 60px;
+    height: 400px;
+    background-color: #dce1ef;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.contact-head{
+    color: rgb(2, 2, 2);
+    margin-left: 80px;
+    width: 100%;
+}
+input{
+    border-radius: 10px;
+    height: 30px;
+    width: 45%;
+    border: 1px solid black;
+    outline: none;
+}
+textarea{
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 70px;
+    outline: none;
+    width: 45%;
+    resize: none;
+    display: flex;
+}
+.contact-list{
+    margin-top: 20px;
+}
+.contactbtn{
+    width: 45%;
+    height: 50px;
+    color: #14c463;
+    color: black;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+p{
+    color: black;
+    font-size: 20px;
+    
+}

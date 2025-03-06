@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notification Example</title>
+</head>
+
+<body>
+  <button onclick="show()">Show Notification</button>
+  <input type="text" id="otptxt">
+  <button onclick="showotp()">verify otp</button>
+  <h3 style="color:darkgreen; display: none;">OTP VERFIED SUCCESSFULLY..</h3>
+  <script>
+    let getotp;
+    var succesmsg = document.querySelector("h3")
+    function show() {
+      Notification.requestPermission().then(function (permission) {
+        if (permission == "granted") {
+          getotp = Math.floor(Math.random() * 100000).toString();
+          const otp = new Notification(getotp);
+        }
+      });
+    }
+    function showotp() {
+      var enteredotp = document.getElementById("otptxt").value
+      if (getotp === enteredotp){
+        succesmsg.style.display = "block"
+      }
+      else{
+        alert("verification failed try again")
+      } 
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sanserif';
+}
+/* navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    box-shadow: 0 0 10px rgb(139, 137, 137);
+}
+/* tittle */
+.titlecard{
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(156, 179, 179);
+}
+.card{
+    text-align: center;
+    padding-top: 28px;
+    font-size: 30px;
+}
+.adminpanel{
+    display: none;
+}
+/* slidemenu */
+.slidemenu{
+    width: 17%;
+    position: relative;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px rgb(128, 124, 124);
+    z-index: 1;
+}
+.menulist{
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+/* Tournament area */
+.contentarea{
+    position: absolute;
+    width: 82%;
+    height: 400px;
+    top: 30%;
+    left: 18%;
+}
+.tourna-menu{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+input{
+    width: 350px;
+    height: 30px;
+    outline: none;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 0 0 5px rgb(153, 147, 147) inset;
+}
+.tourna-menu > label:nth-child(3){
+    margin-left: 25px;
+}
+.details{
+    text-decoration: none;
+    position: relative;
+    font-size: 25px;
+}
+.details::after{
+    content: ""; 
+    position: absolute; 
+    left: 0;
+    bottom: 0px; 
+    width: 100%; 
+    border-bottom: 2px solid rgb(27, 168, 27); 
+    padding-bottom: 1px; 
+}
+textarea{
+    width: 90%;
+    margin-top: 10px;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 0 0 5px rgb(153, 147, 147) inset;
+}
+/* Classes and location  */
+.class-menu{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.class-menu > label:nth-child(3){
+    margin-left: 25px;
+}
+.events-menu{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.events-menu > label:nth-child(3){
+    margin-left: 25px;
+}
+.addpostbtn{
+    padding: 14px 28px;
+    margin-top: 20px;
+    margin-left: 60px;
+    opacity: 0;
+    color: black;
+    background-color: rgb(76, 155, 45);
+    border: none;
+    border-radius: 10px;
+    animation: btnanima 1s forwards .97s ease;
+}
+.animation{
+    animation: motion 1s forwards;
+}
+/* animation */
+@keyframes btnanima{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes motion{
+    from{
+        position: relative;
+        left: -100%;
+    }
+    to{
+        position: relative;
+        left: -0%;
+    }
+}
+.loginkey{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgb(133, 119, 119);
+    height: 200px;
+    width: 400px;
+    background-color: #e0e0e0;
+    position: absolute;
+    left: 35%;
+    top: 200px;
+    right: 50%;
+    border-radius: 10px;
+}
+.loginkey > h1{
+    text-align: center;
+    font-size: 23px;
+    margin: 30px 5px 20px 5px;
+}
+.loginkey > input{
+    width: 200px;
+    margin-left: 93px;
+}
+.keybtn{
+    width: 90px;
+    height: 50px;
+    margin: 10px 50px 20px 155px;
+    border-radius: 10px;
+    border:none;
+    background-color: rgb(67, 189, 67);
+    color: black;
+}
+.popupmsg{
+    display: none;
+    background-color: white;
+    margin-top: 10px;
+    padding: 5px 20px;
+    position: absolute;
+    top: 75%;
+    left: 615px;
+    width: fit-content;
+    animation: popup 1s forwards;
+    box-shadow: 0 0 10px rgb(128, 126, 126);
+    border-radius: 20px;
+}
+.popupmsg > h4{
+    color: green;
+    font-size: 20px;
+}
+.popdown{
+    animation: popdown 1s forwards;
+}
+@keyframes popup{
+    from{
+        opacity: 0.3;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes popdown{
+    from{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}

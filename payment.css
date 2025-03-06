@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "sanserif";
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options > h3{
+    color: black;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 5px rgba(196, 197, 196, 0.87);
+    border-radius: 10px;
+    padding: 20px 10px 20px 40px;
+    margin: 40px 40px 20px 40px;
+    cursor: pointer;
+}
+.options > h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+.upiimg{
+    position: absolute;
+    margin: 53px 0 0 130px;
+    cursor: pointer;
+}
+.bankimg{
+    position: absolute;
+    margin: 35px 0 0 120px;
+    cursor: pointer;
+}
+.qrimg{
+    mix-blend-mode: multiply;
+    position: absolute;
+    margin: 35px 0 0 110px;
+    cursor: pointer;
+}
+.payment {
+    border-radius: 10px;
+    width: 350px;
+    height: 80vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.payment > h5{
+    display: none;
+}
+.payhead {
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    color: green;
+    margin-top: 10px;
+}
+.payment-method {
+    margin-left: 20px;
+    margin-top: 5px;
+    display: none;
+}
+input[type="radio"]{
+    cursor: pointer;
+}
+.payment-method > label{
+    cursor: pointer;
+}
+.upimethod {
+    margin-top: 25px;
+    display: none;
+    transition: 1s;
+}
+.paymethod1 {
+    margin: 5px 5px 15px 5px;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(129, 124, 124, 0.678);
+}
+.paymethod2 {
+    margin: 5px 5px 15px 5px;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(129, 124, 124, 0.678);
+}
+
+.paymethod3 {
+    margin: 5px 5px 15px 5px;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(129, 124, 124, 0.678);
+}
+
+.paytmid {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px 10px 15px;
+    display: none;
+}
+
+.gpayid {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px 10px 15px;
+    display: none;
+}
+
+.phonepeid {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px 10px 15px;
+    display: none;
+}
+
+.bankmethod {
+    margin: 20px 20px 10px 20px;
+    display: none;
+    transition: 1s;
+}
+.bankmethod>h3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(129, 124, 124, 0.678);
+}
+.paybtn{
+    display: none;
+}
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+    /* border: 1 solid black; */
+    box-sizing: border-box;
+}
+
+.btn-53 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #0fa81c;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+}
+
+.btn-53:disabled {
+    cursor: default;
+}
+
+.btn-53:-moz-focusring {
+    outline: auto;
+}
+
+.btn-53 svg {
+    display: block;
+    vertical-align: middle;
+}
+
+.btn-53 [hidden] {
+    display: none;
+}
+
+.btn-53 {
+    border: 1px solid black;
+    border-radius: 999px;
+    box-sizing: border-box;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    padding: 1.2rem 3rem;
+    position: relative;
+    text-transform: uppercase;
+    top: 0px;
+    left: 90px;
+}
+
+.btn-53 .original {
+    background: #fff;
+    color: #000;
+    display: grid;
+    inset: 0;
+    place-content: center;
+    position: absolute;
+    transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53:hover .original {
+    transform: translateY(100%);
+}
+
+.btn-53 .letters {
+    display: inline-flex;
+}
+
+.btn-53 span {
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+    transform: translateY(15px);
+}
+
+.btn-53:hover span {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+    transition-delay: 0.5s;
+}
+
+.btn-53:hover span:nth-child(7) {
+    transition-delay: 0.65s;
+}
+.qrmethod{
+    display: none;
+}
+.qrcodeimg{
+    width:320px; 
+    height:300px;
+    margin-left: 17px;
+}
+.qrcode > h3{
+    margin-top: 10px;
+    margin-bottom: -5px;
+    text-align: center;
+}
+/* paymentverify */
+.paymentverify{
+    padding: 10px;
+    display: none;
+}
+.photocard{
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    padding: 0 0 30px 0 ;
+}
+.paymentcard{
+    text-align: center;
+    text-decoration: underline;
+    padding: 5px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.pvhead{
+    text-align: center;
+    font-size: 19px;
+    margin: 20px 10px 40px 10px;
+    padding-top: 20px;
+}
+.uploadbtn{
+    border-radius: 10px;
+    font-size: 23px;
+    border: 1px solid rgb(28, 184, 28);
+    padding: 6px 70px;
+    margin-left: 53px;
+    background-color: rgb(28, 184, 28);
+    cursor:pointer;
+}
+.utrcard{
+    margin: 20px 0px 0 0;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    padding: 0 10px 10px 0;
+}
+.UTR{
+    text-align: center;
+    font-size: 22px;
+    padding: 20px 5px ;
+    height: 40px;
+    width: 100%;
+}
+.UTRNO{
+    padding: 5px;
+    width: 61%;
+    height: 20px;
+    margin: 10px 0px 10px 66px;
+    border-radius: 8px;
+    border: 1px solid black;
+    outline: none;
+
+}
+.paymentbtn{
+    background: #fbca1f;
+    font-family: inherit;
+    padding: 0.2em 2.3em;
+    margin: 15px 10px 0px 90px;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+.paymentbtn:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+.paymentbtn:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+  
+
